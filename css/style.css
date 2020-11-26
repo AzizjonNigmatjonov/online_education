@@ -59,30 +59,45 @@ body {
 	font-weight: 600;
 	font-size: 18px;
 	letter-spacing: normal;
+	transition: 0.2s;
 }
 
-.sign-in-link {
-	text-decoration: none;
-	color: #333;
-	font-family: 'Nunito', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	letter-spacing: normal;
-	font-style: normal;
+.nav-link:hover {
+	padding-bottom: 10px;
+	box-shadow: 0px 3px 0px #333;
+}
+
+.nav-sign {
+	width: 250px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-sign >.active {
+	background-color: #2575e6;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
 }
 
 .sign-up-link {
 	text-decoration: none;
-	color: #fff;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 600;
 	font-size: 18px;
 	letter-spacing: normal;
 	font-style: normal;
+	color: #333;
+	padding: 10px 30px;
+}
+
+.sign-up-link:hover {
 	background-color: #2575e6;
 	padding: 10px 30px;
 	border-radius: 5px;
-	margin-left: 25px;
+	color: #fff;
 }
 
 .main .container {
@@ -118,22 +133,35 @@ body {
 
 .find-form {
 	margin-top: 38px;
+	position: relative;
 }
 
 .input-find-input {
 	padding: 20px 25px;
 	border: none;
 	width: 290px;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 	color: #b5b5b5;
 	font-family: Nunito;
 	font-size: 18px;
 	font-weight: 400;
 	font-style: normal;
 	letter-spacing: normal;
+	outline: none;
+	color: #333;
 }
 
-.find-label {
-	background-color: 
+.find-button {
+	background-color: #2575e6;
+	padding: 20px 25px;
+	color: #fff;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	outline: none;
+	border: none;
+	position: absolute;
+	font-family: Nunito;
+	font-size: 18px;
+	font-weight: 400;
 }
